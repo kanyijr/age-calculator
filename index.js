@@ -191,6 +191,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
     function submitForm(){
         form.submit();
+        console.log("submitted")
     }
     
     // input.style = "border: 1px solid hsl(0, 100%, 67%);"
