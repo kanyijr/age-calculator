@@ -5,8 +5,22 @@ function checkIsNumber(value){
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    var form = document.querySelector(".date__input");
-    form.addEventListener("submit", (e)=>{
+    let form = document.querySelector(".date__input");
+    var btn = document.querySelector(".wrapper__image")
+
+
+
+
+
+    form.addEventListener("submit", ageLogic)
+    btn.addEventListener("click",ageLogic)
+    
+    
+    // input.style = "border: 1px solid hsl(0, 100%, 67%);"
+})
+
+function ageLogic(e){
+    {
         e.preventDefault()
         
         
@@ -187,13 +201,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }
             
         }
+
        
-    })
-    function submitForm(){
-        form.submit();
-        console.log("submitted")
     }
-    
-    // input.style = "border: 1px solid hsl(0, 100%, 67%);"
-})
+}
 
