@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+   <main class="container">
+        <div class="wrapper">
+          <form action="" class="date__input" novalidate>
+            <div class="date__div">
+              <label for="day" class="date__label">day</label>
+              <input type="text" name="day" id="day" class="error-input" placeholder="DD">
+            </div>
+            
+            <div class="date__div">
+              <label for="month" class="date__label">month</label>
+              <input type="text" name="month" id="month" placeholder="MM">
+            </div>
+
+            <div class="date__div">
+              <label for="year" class="date__label">year</label>
+              <input type="text" name="year" id="year" placeholder="YYYY">
+            </div>
+         
+            
+            <input type="submit" value="" style="display: none;">
+          </form>
+      
+        <div class="hr">
+          <div class="wrapper__image">
+            <img src="assets/images/icon-arrow.svg" alt="arrow-image">
+          </div>
+        </div>
+        
+        <div class="date__output">
+          <p class="date__output-years"><span class="accent">--</span> years</p>
+          <p class="date__output-months"><span class="accent">--</span> months</p>
+          <p class="date__output-days"><span class="accent">--</span> days</p>
+
+
+          
+        </div>
+
+      </div> 
+   </main>
+  
+
+
+
+
+   <script src="index.js">
+ 
+   </script>
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/kanyijr">Mwenda Kanyi</a>.
+  </div>
+</body>
+</html>
