@@ -5,7 +5,7 @@ function checkIsNumber(value){
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    let form = document.querySelector(".date__input");
+    var form = document.querySelector(".date__input");
     form.addEventListener("submit", (e)=>{
         e.preventDefault()
         
@@ -189,6 +189,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
        
     })
+    function submitForm(){
+        form.submit();
+    }
     
     // input.style = "border: 1px solid hsl(0, 100%, 67%);"
 })
