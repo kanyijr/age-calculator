@@ -13,7 +13,7 @@
   
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Mwenda Kanyi | Age calculator app</title>
+  <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -25,7 +25,7 @@
 
    <main class="container">
         <div class="wrapper">
-          <form action="" class="date__input" novalidate>
+          <form action="" class="date__input" novalidate onsubmit="jsFunction();return false">
             <div class="date__div">
               <label for="day" class="date__label">day</label>
               <input type="text" name="day" id="day" class="error-input" placeholder="DD">
@@ -47,7 +47,7 @@
       
         <div class="hr">
           <div class="wrapper__image">
-            <img src="assets/images/icon-arrow.svg" alt="arrow-image" onclick="submitForm()">
+            <img src="assets/images/icon-arrow.svg" alt="arrow-image" >
           </div>
         </div>
         
