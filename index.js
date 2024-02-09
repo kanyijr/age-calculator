@@ -188,12 +188,15 @@ function ageLogic(e){
                     if(current_month<month){
                         year_output.innerHTML = (current_year-year-1)
                         month_output.innerHTML = current_day < day?((12+current_month) - month-1):((12+current_month) - month)
+                        month_output.innerHTML = parseInt(month_output.innerHTML) ==12 ? 0:month_output.innerHTML
                         console.log("im here")
                         day_output.innerHTML = current_day < day?(dayMap[current_month-1]-day)+current_day:current_day-day;
                   
                     }else{
                         year_output.innerHTML = (current_year-year)
                         month_output.innerHTML = current_day < day?((12+current_month) - month-1):((current_month) - month)
+                        month_output.innerHTML = parseInt(month_output.innerHTML) ==12 ? 0:month_output.innerHTML
+
                         console.log("im here")
                         day_output.innerHTML = current_day < day?(dayMap[current_month-1]-day)+current_day:current_day-day;
                     }
